@@ -32,13 +32,13 @@ import java.util.stream.Collectors;
 /**
  * Servlet implementation class CloudVision
  */
+
 @WebServlet("/CloudVision")
 public class CloudVision extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	 private BlobstoreService blobstoreService = BlobstoreServiceFactory.getBlobstoreService();
-
-    
+	
     public CloudVision() {
         super();
         // TODO Auto-generated constructor stub
@@ -47,6 +47,7 @@ public class CloudVision extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
@@ -55,6 +56,7 @@ public class CloudVision extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String imageurl = request.getParameter("hiddenField");
@@ -70,9 +72,7 @@ public class CloudVision extends HttpServlet {
         RequestDispatcher dispatcher = getServletContext()
                 .getRequestDispatcher("/upload");
         
-        dispatcher.forward(request, response);
-		
-		
+        dispatcher.forward(request, response);	
 	}
 	
 	 private static byte[] downloadFile(URL url) throws Exception {
@@ -132,8 +132,6 @@ public class CloudVision extends HttpServlet {
 	        } catch (Exception e) {
 	            e.printStackTrace();
 	        }
-		 
-		 
 		 return null;
 		 
 	 }
