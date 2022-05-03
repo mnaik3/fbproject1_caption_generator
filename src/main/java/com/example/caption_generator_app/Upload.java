@@ -1,7 +1,6 @@
 package com.example.caption_generator_app;
 
 import com.example.Entity.*;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -10,7 +9,6 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -30,11 +28,9 @@ import com.google.appengine.api.datastore.DatastoreServiceFactory;
 import com.google.appengine.api.images.ImagesService;
 import com.google.appengine.api.images.ImagesServiceFactory;
 import com.google.appengine.api.images.ServingUrlOptions;
-
 import com.google.cloud.vision.v1.*;
 import com.google.cloud.vision.v1.Feature.Type;
 import com.google.protobuf.ByteString;
-
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
