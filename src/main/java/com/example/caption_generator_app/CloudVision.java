@@ -30,8 +30,10 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * Servlet implementation class CloudVision
+ * Servlet implementation class CloudVision.
  */
+
+
 
 @WebServlet("/CloudVision")
 public class CloudVision extends HttpServlet {
@@ -52,6 +54,8 @@ public class CloudVision extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
+	
+	
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
@@ -82,6 +86,7 @@ public class CloudVision extends HttpServlet {
 	        }
 	    }
 	 
+	
 	 public List<AnnotationEntity> getImageLabels(String imageUrl) {
 		 
 		 try {
