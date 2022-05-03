@@ -3,7 +3,6 @@ package com.example.caption_generator_app;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
-
 import com.googlecode.objectify.ObjectifyService;
 
 @WebListener
